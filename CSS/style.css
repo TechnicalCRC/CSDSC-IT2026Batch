@@ -1,6 +1,57 @@
 .main{
-  background-color: gold;
+  background-color: turquoise;
+  width: 70%;
+  height: 700px;
+  margin: auto;
 }
-input[type=text]{
+h1{
+  text-align: center;
+}
+input[type=text], input[type=password], input[type=email], select{
   width: 100%;
+  margin-bottom: 10px;
 }
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, select:hover {
+  background-color: violet;
+}
+
+input[type=text]:focus{
+  background-color: aqua;
+  font-size: 30px;
+}
+select:focus{
+  background-color: yellow;
+}
+
+label{
+  color: rgb(45, 32, 193);
+  font-weight: bolder;
+  font-size: 18px;
+}
+legend{
+  color: red;
+}
+
+fieldset{
+  padding: 10px;
+  margin: 20px;
+}
+input[type=submit], input[type=reset]{
+  width: 49%;
+  margin-left: 4px;
+  background-color: tomato;
+  border: 0;
+  font-size: larger;
+  color: white;
+  font-weight: bolder;
+  float: left;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+  background-color: black;
+}
+
+/* label:hover{
+  font-size: 30px;
+} */
