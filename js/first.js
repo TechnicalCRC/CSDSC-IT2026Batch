@@ -1,0 +1,1 @@
+console.log("Call in External Js")
