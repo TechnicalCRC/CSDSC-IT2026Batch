@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Task 4</title>
+</head>
+
+<body>
+  <button
+    style="background-color: rgb(120, 242, 120); border: 0; border-radius: 15px; font-size: 20px; font-weight: 400; padding: 5px 20px;"
+    onclick="
+    let val = document.getElementById('bag');
+    count++;
+    val.innerText = `Your Bag has ${count} items`;  
+  ">Add to Bag</button>
+  <button
+    style="background-color: rgb(228, 244, 228); border: 3px solid black; border-radius: 15px; font-size: 20px; font-weight: 400; padding: 7px 60px;"
+    onclick="  count--;
+  document.getElementById('bag').innerText = `Your Bag has ${count} items`;  ">
+    Move to Wishlist</button>
+  <button
+    style="background-color: rgb(120, 242, 120); border: 0; border-radius: 15px; font-size: 20px; font-weight: 400; padding: 5px 20px;"
+    onclick="  count+=2;
+    document.getElementById('bag').innerText = `Your Bag has ${count} items`;  ">Add 1+1 sale item</button>
+  <h2 id="bag">Your Bag has 0 items</h2>
+  <script>
+    let count = 0;
+  </script>
+</body>
+
+</html>
