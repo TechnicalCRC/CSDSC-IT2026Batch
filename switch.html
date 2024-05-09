@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Switch</title>
+</head>
+
+<body>
+  <h1>WAP to Show Day of a number</h1>
+  <input type="text" id="t1" placeholder="Enter a number" onkeydown="
+  let val = document.getElementById('t1').value;
+  let result = document.getElementById('result');
+ 
+  let output = '';
+  if(event.key === 'Enter'){
+  switch(Number(val)){
+    case 1: output += 'Monday ';
+    case 2: output += 'Tuesday ';
+    case 3: output += 'Wednesday ';
+    default: output += 'Wrong Input ';
+    case 4: output += 'Thursday ';
+    case 5: output += 'Friday ';
+                     break;
+    case 6: output += 'Saturday ';
+    case 7: output += 'Sunday ';
+  }
+  result.innerHTML = ' Your Result=>';
+  result.innerHTML += output;
+  //console.log(val);
+  }
+
+  ">
+
+  <h1 id="result">Your Result =></h1>
+
+</body>
+
+</html>
