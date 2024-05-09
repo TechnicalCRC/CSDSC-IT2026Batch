@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Even Odd</title>
+</head>
+
+<body>
+  <h1>WAP to check a number even or odd</h1>
+  <input type="text" id='t1' placeholder="Enter a number">
+  <button onclick="
+  let num = Number(document.getElementById('t1').value);
+  let result = document.getElementById('res');
+
+  if(num%2 == 0)
+   {
+    result.innerHTML = 'Your Result => Even';
+    result.style.color = 'green';
+    result.style.backgroundColor = 'black';
+  }
+   else
+   {
+    result.innerHTML = 'Your Result => Odd';
+    result.style.color = 'red';
+    result.style.backgroundColor = 'yellow';
+   }
+
+  ">Check</button>
+  <h2 id="res">Your Result => </h2>
+</body>
+
+</html>
