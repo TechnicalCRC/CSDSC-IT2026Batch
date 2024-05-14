@@ -1,0 +1,31 @@
+.main{
+  border: 5px solid rgba(38, 28, 8, 0.766);
+  width: 220px;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: burlywood;
+}
+input{
+  width: 96%;
+  padding: 3px;
+  height: 20px;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.mybtn{
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  border: 2px solid rgb(79, 104, 202);
+  border-radius: 8px;
+ font-size: 23px;
+ font-weight: bolder;
+ background-color: antiquewhite; 
+}
+.btn-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
