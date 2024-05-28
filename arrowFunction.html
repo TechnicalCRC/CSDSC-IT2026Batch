@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+
+<body>
+  <script>
+    // Arrow Function
+    // function 1
+    // let show = () => console.log("Hello Me");
+    // show();
+
+    // // function 2
+    // let add = (a,b)=>{
+    //   let c;
+    //   c = a+b
+    //  console.log(c);
+    // }
+
+    // add(2,3);
+    // add(5,3);
+
+    //   // function 3
+    //   let add = (a,b)=>{
+    //    return a+b;
+    //   }
+
+    //   console.log( add(2,3));
+    //  console.log( add(6,3));
+
+    // function 4
+    // let add = (a, b) => a + b;
+    // console.log(add(2, 3));
+
+    // // function 5
+    // let square = a => a * a;
+    // console.log(square(5));
+
+    // //function 6
+    // let show = () => console.log("Hello Me");
+    // show();
+
+//  let display = result => console.log("Result : " + result );
+
+//   let mul = (a,b)=> display(a*b);
+
+//     mul(2,7);
+
+  // self invoking function
+
+  let add = function(a,b){
+    console.log(a+b);
+  }(4,7);  // invoked the function itself
+
+
+  // not work on normal and arrow function
+  // function add1(a,b){
+  //   console.log(a+b);
+  // }(3,5);
+    
+  // let add2 =(a,b)=>{
+  //   console.log(a+b);
+  // }(4,7);
+
+  </script>
+
+</body>
+
+</html>
