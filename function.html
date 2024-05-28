@@ -60,27 +60,32 @@
 
 
     // function 6
-  //   function display(result) {
-  //     console.log("Result : " + result);
-  //   }
-  //   function multiply(num1,num2){
-  //     // let mul = num1*num2;
-  //     return num1*num2;
-  //   }
-  //   function sub(num1,num2){
-  //     return(num1-num2);
-  //   }
-  //  display(multiply(3,6));
-  //  display(sub(34,5));
+//     function display(result) {
+//       console.log("Result : " + result);
+//     }
+//     function multiply(num1,num2){
+//       // let mul = num1*num2;
+//       return num1*num2;
+//     }
+//     function sub(num1,num2){
+//       return(num1-num2);
+//     }
+// function add(num1,num2){
+//   return num1+num2;
+// }
+//     display(multiply(3,6));
+//    display(sub(34,5));
+// display(add(4,7));
 
   // function expression
  
    // function 7
    
-  //  let add = function (a,b){
+  //  const add = function (a,b){
   //   console.log(a+b);
   //     };
-  //  add(3,4);
+  //     add(3,4);
+
   //  document.write(add);
   //  console.log(add);
   //  let a=20;
@@ -121,12 +126,55 @@
 //   add(5);
 //   add();
 
-function dob(db='1-1-2004')
-{
-  console.log(db);
+// function dob(db='1-1-2004')
+// {
+//   console.log(db);
+// }
+// dob('2-march-2004');
+// dob();
+
+// show();
+
+// function show(){
+//   console.log('Display');
+// }
+
+
+// default parameter
+// function add(a=0,b=0){
+//   console.log(a+b);
+// }
+// add(2,6);
+// add(7)
+// add(1,2,3);
+// add();
+// add(4,3,5,6,7,1,8,5,4,3,4);
+
+// Rest paramenter
+// function add(...arr){
+//   document.write("<br>Values are : ")
+//   for(i=0; i<arr.length; i++)
+//   {
+// document.write(arr[i]+" ");
+//   }
+// }
+// add(2,4);
+// add();
+// add(1,2,3,4,5);
+
+
+function add(a,b,...arr){
+  console.log(arr);
+  let s = 0;
+    document.write("<br>sum : ")
+  for(i=0; i<arr.length; i++)
+   s+=arr[i];
+document.write(s);  
 }
-dob('2-march-2004');
-dob();
+add(2,4);
+add();
+add(1,2,3,4,5);
+
 </script>
 
 </body>
