@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String in JS</title>
+</head>
+
+<body>
+
+  Enter .(Comma) values in Textbox
+  <input type="text" id="txt">
+  <button onclick="split()">Click</button>
+  <p id="res"></p>
+  <script>
+    let split = () => {
+      let text = document.getElementById('txt').value;
+      let arr = text.split(',');
+
+      let result = document.getElementById('res');
+      result.innerHTML = '';
+      for (i = 0; i < arr.length; i++) {
+        result.innerHTML += arr[i] + '<br>';
+      }
+
+
+
+
+    }
+
+    // String in JS
+
+    //     let str = '2+8';
+    //     console.log(str);
+    //     console.log(eval(str));
+
+    //     let str1 = new String('2+4');
+    //     console.log(str1);
+    //     console.log(eval(str1.valueOf()));
+    // console.log(str == str1);
+
+    let str = 'Ramesh Kumar';
+    console.log(str);
+    // console.log(str.charAt(5));
+    // console.log(str.concat(' Sharma'));
+
+    // console.log(str.indexOf('a'));
+    // console.log(str.lastIndexOf('a'));
+
+
+    // console.log(str.search('a'));
+    // console.log(str.search('sh '));
+
+
+    // console.log(str.match('ma'));
+
+    // console.log(str.replace('a','xx'));
+    // console.log(str.replaceAll('a','xx'));
+
+
+    // console.log(str.toLowerCase());
+    // console.log(str.toUpperCase());
+
+    // console.log(str.substr(0,5));
+    // console.log(str.substring(0,5));
+    // console.log(str.slice(0,5));
+
+
+    // console.log(str.substr(4,5));
+    // console.log(str.substring(4,8));
+
+
+    // console.log(str.slice(5,2));
+    // console.log(str.substring(5,2));
+
+
+
+    // console.log(str.substring(4,-1));
+    // console.log(str.slice(4,-2));
+
+
+    console.log(str.split());
+    console.log(str.split(''));
+    console.log(str.split(' '));
+    console.log(str.split('a'));
+
+  </script>
+</body>
+
+</html>
