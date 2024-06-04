@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  
+  <script>
+    // Arrays in JS
+    let arr = [1,2,3,4];
+    console.log(arr);
+
+    // with new keyword
+    let arr1 = new Array(2);
+    arr1[0] = 'Ram';
+    arr1[1] = 'Shyam';
+    console.log(arr1);
+
+    // mix data
+    let arr2 = [34, 'Varun', 453.56];
+    console.log(arr2);
+
+    // for(i=0;i<arr2.length;i++)
+    // console.log(arr2[i]);
+
+    
+    for(let a of arr2)
+      console.log(a);
+
+      for(let a in arr2)
+        console.log(a);
+
+      for(let a in arr2)
+        console.log(arr2[a]);
+  
+// new Array()
+let arr4  = new Array('Ram',34,'Varun',45);
+console.log(arr4);
+
+
+  </script>
+</body>
+</html>
