@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  
+  <script>
+    //Objects
+  //   let person = {
+  //     name:'Ram',
+  //     age:24,
+  //     city:'Delhi'
+  //   };
+
+  //   console.log(person);
+  //   console.log(person['name']);
+  //   console.log(person['city']);
+  //   console.log(person['age']);
+  // console.log(' ');
+  //   console.log(person.city);
+  //   console.log(person.age);
+  //   console.log(person.name);
+
+  // let car = {make:'2010', model:'Swift VXi'};
+  // car.make = 2023;
+  // console.log(car.make);
+  // console.log(car.model);
+  // car.color= 'red';
+  // car.company = 'Maruti';
+  // console.log(car); 
+
+  // let fan = {};
+  // fan.model = 'XY0';
+  // fan.wings = 3;
+  // fan.color = 'white';
+  // console.log(fan); 
+  // console.log(fan.color);
+  
+
+//   let person = new Object({gender:'Male',contact:87584758475});
+//   person.name = 'Ramesh';
+//   person.age = 40;
+//   person.occupation = 'Manager';
+//   console.log(person);
+// //  console.log(person['contact']);
+
+// // for(let i in person){
+// //     console.log(i + ' : ' +person[i]);
+// //   }
+//   for(let i in person){
+//     console.log(`${i} : ${person[i]}`);
+//   }
+
+// object with methods
+
+// let student={
+//   fname:'Ramesh',
+//   lname:'Sharma',
+//   age : 34,
+//   marks:376,
+//   fullName: function(){
+//     return this.fname + ' ' + this.lname;
+//   },
+//   result:function(newMarks){
+//     return `${this.fname} scored ${this.marks+newMarks}`;
+//   }
+// }
+
+// console.log(student);
+// console.log(student.fname);
+// console.log(student.marks);
+// console.log(student.fullName());
+// console.log(student.result(50));
+
+// object destructring
+
+let person = {
+  name:'Ramesh',
+  age : 45,
+  hello : function(){
+    console.log('hello me in person');
+  }
+};
+
+let {name,age,hello} = person;
+console.log(name);
+console.log(age);
+console.log(person.name);
+person.hello();
+hello();
+
+
+// array destructruing
+let arr = [1,2,3];
+let [a,b] = arr;
+console.log(a);
+
+</script>
+</body>
+</html>
