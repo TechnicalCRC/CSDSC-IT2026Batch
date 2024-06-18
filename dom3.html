@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dom 3</title>
+</head>
+
+<body>
+
+  <h1> Enter for Todo</h1>
+  <br>
+  <input type="text" id="t1" placeholder="Enter todo here" autocomplete="off">
+  <button onclick="addTodo()">Add Todo</button>
+
+  <p id="result"></p>
+
+  <script>
+    function addTodo() {
+      let res = document.querySelector('#result');
+      let txt = document.getElementById('t1');
+
+      let val = `<p>${txt.value}</p>`;
+
+      res.innerHTML += val;
+      txt.value = '';
+    }
+  </script>
+</body>
+
+</html>
