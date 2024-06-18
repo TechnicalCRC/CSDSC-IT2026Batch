@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Even Odd</title>
+</head>
+
+<body>
+  <h1>Even Odd App</h1>
+  <input type="text" placeholder="Enter number" id="t1">
+  <button onclick="eo()">Check for Even/Odd</button>
+  <div>
+    <div style="float: left;width: 45%; border: 2px solid red;">
+      <h3> Even's</h3>
+      <p id="res-even"></p>
+    </div>
+    <div style="float: left;width: 45%; border: 2px solid green;">
+      <h3>Odd's</h3>
+      <p id="res-odd"></p>
+    </div>
+  </div>
+
+  <script>
+    let eo = () => {
+      let txt = Number(document.querySelector('#t1').value);
+
+      let ev = document.getElementById('res-even');
+      let od = document.getElementById('res-odd');
+      if (txt % 2 == 0) {
+        ev.innerHTML += `<p>${txt}</p>`;}
+        else{
+        od.innerHTML += `<p>${txt}</p>`;
+        
+      }
+    }
+
+  </script>
+</body>
+
+</html>
