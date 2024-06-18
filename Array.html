@@ -9,35 +9,107 @@
   
   <script>
     // Arrays in JS
-    let arr = [1,2,3,4];
-    console.log(arr);
+//     let arr = [1,2,3,4];
+//     console.log(arr);
 
-    // with new keyword
-    let arr1 = new Array(2);
-    arr1[0] = 'Ram';
-    arr1[1] = 'Shyam';
-    console.log(arr1);
+//     // with new keyword
+//     let arr1 = new Array(2);
+//     arr1[0] = 'Ram';
+//     arr1[1] = 'Shyam';
+//     console.log(arr1);
 
-    // mix data
-    let arr2 = [34, 'Varun', 453.56];
-    console.log(arr2);
+//     // new Array()
+// let arr4  = new Array('Ram',34,'Varun',45);
+// console.log(arr4);
 
-    // for(i=0;i<arr2.length;i++)
-    // console.log(arr2[i]);
+//     // mix data
+//     let arr2 = [34, 'Varun', 453.56];
+//     console.log(arr2);
+
+//     // for(i=0;i<arr2.length;i++)
+//     // console.log(arr2[i]);
 
     
-    for(let a of arr2)
-      console.log(a);
+//     for(let a of arr2)
+//       console.log(a);
 
-      for(let a in arr2)
-        console.log(a);
+//       for(let a in arr2)
+//         console.log(a);
 
-      for(let a in arr2)
-        console.log(arr2[a]);
+//       for(let a in arr2)
+//         console.log(arr2[a]);
   
-// new Array()
-let arr4  = new Array('Ram',34,'Varun',45);
-console.log(arr4);
+
+// spread operator
+//  let arr = [3,6,21,19];
+//   console.log(Math.max(2,6,14,7));
+// console.log(Math.max(...arr));
+// console.log(Math.max(arr[0],arr[1],arr[2],arr[3]));
+
+
+// let arr1 = [2,3,4,5];
+// let arr2 = [7,8,9];
+// let arr3 = [...arr1,...arr2];
+// console.log(arr3);
+
+// let arr = ['ram','shyam','varun','vinit'];
+// // let arr1 = [...arr];
+
+// // arr1[1] = 'Neeta';
+
+// // console.log(arr);
+// // console.log(arr1);
+
+// function me(ar2){
+//   ar2[2] = 'Mohit';
+// }
+// me(...arr);
+
+// console.log(arr);
+
+// console.log(arr.slice(0,2));
+// arr.splice(1,1,56.4,23,'name','age',[3,4,5]);
+// console.log(arr);
+
+
+// let arr = [11,34,23,56];
+
+// let f = arr.findIndex((val)=>{
+//   return val>4;
+// });
+// console.log(f);
+  
+//  let fun = (v)=>{
+//   console.log(v*v);
+//  }
+//   arr.forEach((a)=>{
+//     console.log(a*10);
+//   });
+  
+//   let sq = arr.map((val)=>{
+//     return val*val;
+//   });
+
+//   console.log(sq);
+
+// //let arr = [11,34,23,56];
+// console.log(arr);
+//   let newArr = arr.filter((val)=>{
+//     return val>30;
+//   })
+//   console.log(newArr);
+  
+
+
+// sort
+let arr = ['vipin','ram','shyam','amit','varun','vinit'];
+arr.sort()
+console.log(arr);
+
+let arr1 = [4,2,7,9];
+arr1.sort((a,b)=> b-a);
+console.log(arr1);
+
 
 
   </script>
