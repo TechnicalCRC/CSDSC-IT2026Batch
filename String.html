@@ -17,7 +17,8 @@
     let split = () => {
       let text = document.getElementById('txt').value;
       let arr = text.split(',');
-
+ 
+      arr.sort((x,y)=> y-x);
       let result = document.getElementById('res');
       result.innerHTML = '';
       for (i = 0; i < arr.length; i++) {
