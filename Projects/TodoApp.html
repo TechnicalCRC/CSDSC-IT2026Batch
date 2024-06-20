@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Todo App</title>
+  <style>
+    b{
+      border: 1px dotted yellowgreen;
+      border-radius: 3px;
+      /* margin: 5px; */
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Todo App</h1>
+  <hr>
+  <input type="text" placeholder="Enter Todo Text Here" id="todo-text">
+  <input type="Date" id="todo-date">
+  <button onclick="addTodo()">Add Todo</button>
+  <hr>
+  <p id="main-container"></p>
+
+  <script>
+    let count = 0;
+
+    let addTodo = () => {
+      // create Parent Element
+      let parentElement = document.createElement('p');
+
+      // create child Elements
+      let todoText = document.createElement('b');
+      let todoDate = document.createElement('b');
+       let todoDelBtn = document.createElement('button');
+
+      todoText.innerHTML = document.querySelector('#todo-text').value;
+      todoDate.innerHTML = document.querySelector('#todo-date').value;
+      todoDelBtn.innerHTML = 'Delete';
+
+      todoText.style.color = 'white';
+      todoText.style.backgroundColor = 'Blue';
+
+      todoDate.style.color = 'white';
+      todoDate.style.backgroundColor = '#ff0000';
+
+      todoDelBtn.setAttribute('style','float:right; border:2px dotted blue;');
+
+      let id = 'p' + (++count);
+
+      // todoDelBtn.setAttribute('onclick',`removeElement(${id})`); //  id.remove();
+      todoDelBtn.setAttribute('onclick',`removeElement('${id}')`); //
+
+
+      parentElement.append(todoText);
+      parentElement.append(todoDate);
+      parentElement.append(todoDelBtn);
+
+//      parentElement.id = id;
+      parentElement.setAttribute('id',id);
+
+      parentElement.setAttribute('style',`border:2px inset red; border-radius:5px;background-color:lightgrey; padding:5px;`);
+      // let main = document.querySelector('#main-container');
+      // main.appendChild(parentElement);
+      document.querySelector('#main-container').appendChild(parentElement);
+
+    }
+
+    function removeElement(id){
+     // id.remove();
+  document.querySelector('#main-container').removeChild
+  (document.querySelector(`#${id}`));
+    }
+  </script>
+
+</body>
+
+</html>
