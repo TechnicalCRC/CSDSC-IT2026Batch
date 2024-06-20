@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crreate Element</title>
+</head>
+<body>
+  <h1>Create Element in DOM</h1>
+
+  <button onclick="create()">Create Element</button>
+  <p id="main-container"></p>
+    
+  <script>
+  let count = 0;
+function create(){
+     let newElement = document.createElement('b');//<p> </p>
+
+     newElement.innerHTML = 'New bold Tag : ' + (++count);
+
+     document.querySelector('#main-container').appendChild(newElement);
+
+    }
+  </script>
+</body>
+</html>
