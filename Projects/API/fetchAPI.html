@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Show Jokes Data</h1>
+  <p id="result"></p>
+ <script>
+   
+   let url = 'https://official-joke-api.appspot.com/random_joke';
+   let promise = fetch(url);
+   promise
+   .then((respose)=>{
+     return respose.json();
+   }).then((data)=>{
+     let val = document.querySelector('#result');
+
+     val.innerHTML = `Type of Joke : ${data.type}
+     <br> Setup Question : ${data.setup}
+     <br> Punch Line     : ${data.punchline} `;
+
+ //  console.log(data.punchline);
+   });
+
+ </script>
+  
+</body>
+</html>
