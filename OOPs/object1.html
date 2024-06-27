@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>OOPs Concept by object </h1>
+
+  <script>
+    // function Person(){
+    //   this.name = 'Ramesh';
+    //   this.age = 23;
+
+    //   this.showData = function(){
+    //     console.log(`I am ${this.name} and I am ${this.age} year old`);
+    //   }
+    // }
+
+    // let obj = new Person();
+    // console.log(obj.name);
+    // obj.showData();
+
+
+    // constructor
+    function Person(name,age){
+      this.name = name;
+      this.age =age;
+
+      this.showData = function(){
+        console.log(`I am ${this.name} and I am ${this.age} year old`);
+      }
+    }
+    let obj1 = new Person('Vipin',21);
+    obj1.showData();
+    let obj2 = new Person('Varun',25);
+    obj2.showData();
+  </script>
+  
+</body>
+</html>
