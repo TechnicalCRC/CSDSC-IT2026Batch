@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>OOPs Concept by Class (ES6)</h1>
+  <script>
+  //  class Person{
+  //    name = 'Shyam';
+  //    age = 22;
+
+  //    showData(){
+  //     console.log(`Name is ${this.name} & Age is ${this.age}`);
+  //    }
+  //  }
+
+  //  let p1 = new Person();
+  //  console.log(p1.name);
+  //  p1.showData();
+  
+  // constructor
+
+  class Person{
+     constructor(name,age){
+        this.name = name;
+        this.age = age;
+     }
+    
+     showData(){
+      console.log(`Name is ${this.name} & Age is ${this.age}`);
+     }
+   }
+
+   let p1 = new Person('Abhishek', 34);
+   p1.showData();
+
+   let p2 = new Person('Soni', 31);
+   p2.showData();
+  
+   // inheritance
+   class student extends Person{
+    study = function(){
+      console.log(`I got 76%`);
+    }
+   }
+
+   let s1 = new student();
+   s1.study();
+
+  </script>
+</body>
+</html>
