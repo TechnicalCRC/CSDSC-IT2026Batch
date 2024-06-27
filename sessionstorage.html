@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Session Storage</h1>
+  
+  <button onclick="f1()">Click to store</button>
+  <button onclick="f2()">Click to read</button>
+  <script>
+    function f1(){
+      sessionStorage.setItem('uname','amit');
+      sessionStorage.setItem('pass','12345');
+    }
+ function f2(){
+  console.log("UNAME : " + sessionStorage.getItem('uname'));
+  console.log("PASS : " + sessionStorage.getItem('pass'));
+ }
+</script>
+  
+</body>
+</html>
