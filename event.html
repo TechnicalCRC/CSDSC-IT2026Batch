@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+ <h1>Events in JavaScript</h1>
+ 
+  <p id="px1" onmouseover="f1()" onmouseout="f2()">Hello Here </p>
+   
+ <script>
+   function f1(){
+   let val = document.querySelector('#px1');
+  val.style.backgroundColor = 'grey'; 
+ val.innerHTML = "Bye Here";  
+val.style.fontWeight = 'bold';
+}
+  function f2(){
+   //let val = document.getElementById('p1');
+    px1.style.backgroundColor = 'white';
+     px1.innerHTML = "Hello Here"; 
+      px1.style.fontWeight = 'normal';
+  }
+
+
+ </script>
+</body>
+</html>
