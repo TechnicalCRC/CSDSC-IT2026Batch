@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Fetch Data from Local Storage</h1>
+  <button onclick="f2()">click on show Data</button>
+  <button onclick="f3()">click on delete Name</button>
+  <button onclick="f4()">click on delete All</button>
+  <button onclick="f5()">click on show length - No of Data - Key</button>
+
+  <script>
+    function f5(){
+      console.log("Length (No of Key - data): "+localStorage.length);
+    }
+    function f2() {
+//      localStorage.setItem('name','Shyam');
+      let n = localStorage.getItem('name');
+
+      console.log("Student Name : " + n);
+
+      let a = localStorage.getItem('age');
+      console.log("Age : " + a);
+    }
+
+    function f3(){
+      localStorage.removeItem('name');
+    }
+    
+    function f4(){
+      localStorage.clear();
+    }
+    
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Local Storage</h1>
+  <button onclick="f1()">Click for Storage</button>
+
+  <script>
+    let f1 = () => {
+      let studentName = 'Ramesh';
+      console.log(studentName);
+
+      localStorage.setItem('name',studentName);
+      console.log(localStorage.getItem('name'));
+
+      localStorage.setItem('age',23);
+      localStorage.setItem('course','CSE');
+    }
+  </script>
+</body>
+
+</html>
