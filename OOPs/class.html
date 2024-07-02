@@ -22,33 +22,59 @@
   
   // constructor
 
-  class Person{
-     constructor(name,age){
-        this.name = name;
-        this.age = age;
-     }
-    
-     showData(){
-      console.log(`Name is ${this.name} & Age is ${this.age}`);
-     }
-   }
+//   class Person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//      }
+//      showData(){
+//       console.log(`Name is ${this.name} & Age is ${this.age}`);
+//      }
+//    }
 
-   let p1 = new Person('Abhishek', 34);
-   p1.showData();
+//    let p1 = new Person('Abhishek', 34);
+//    p1.showData();
 
-   let p2 = new Person('Soni', 31);
-   p2.showData();
+//    let p2 = new Person('Soni', 31);
+//    p2.showData();
+
+//    let p3 = new Person('Vishnu', 12);
+//    p3.showData();
   
-   // inheritance
-   class student extends Person{
-    study = function(){
-      console.log(`I got 76%`);
+//    // inheritance
+//    class student extends Person{
+//      constructor(name,age,subject){
+//       super(name,age);
+//       this.subject = subject;
+// //     const a =10;
+//      }
+//     study = function(){
+//       console.log(`I got 76% in ${this.subject}`);
+//     }
+//    }
+
+//    let s1 = new student('Naveen',24,'SST');
+//    s1.showData();
+//    s1.study();
+//    console.log(p1);
+//    console.log(s1);
+
+
+  class Person{
+    name = 'Ram';               // instance variable // non static
+    static mobile = 34234555;  //  static variable 
+    showName(){                // instance method
+      console.log(`This is ${this.name}`);
     }
-   }
+     static showMob(){         // static method
+      console.log(`Mobile no is ${this.mobile}`);
+    }
+  }
 
-   let s1 = new student();
-   s1.study();
-
+  let p1 = new Person();
+  Person.showMob();
+//  p1.showMob();    // can't call static method by object in javascript
+  p1.showName();
   </script>
 </body>
 </html>
